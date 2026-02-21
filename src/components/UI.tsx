@@ -2,21 +2,26 @@ import Link from "next/link";
 
 export function Card({
   title,
+  eyebrow,
   children,
   footer,
 }: {
   title?: string;
+  eyebrow?: string;
   children: React.ReactNode;
   footer?: React.ReactNode;
 }) {
   return (
     <section className="rounded-xl2 border border-border bg-card text-card-fg shadow-soft">
-      {title ? (
+      {(eyebrow || title) ? (
         <div className="border-b border-border px-6 py-4">
-          <h2 className="text-base font-semibold">{title}</h2>
+          {eyebrow ? <div className="text-xs font-semibold text-muted-fg">{eyebrow}</div> : null}
+          {title ? <h2 className="mt-1 text-base font-semibold">{title}</h2> : null}
         </div>
       ) : null}
+
       <div className="px-6 py-5">{children}</div>
+
       {footer ? <div className="border-t border-border px-6 py-4">{footer}</div> : null}
     </section>
   );
