@@ -1,5 +1,5 @@
 import { SiteShell } from "@/components/SiteShell";
-import { ButtonLink, Card, Pill } from "@/components/UI";
+import { ButtonLink, Card } from "@/components/UI";
 
 export default function HomePage() {
   return (
@@ -7,15 +7,17 @@ export default function HomePage() {
       <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
         {/* Hero */}
         <div className="space-y-6">
-          <Pill>
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-fg shadow-soft">
             <span className="h-2 w-2 rounded-full bg-accent" />
             Beta forming now • Founding Birders get 30 days Premium at launch
-          </Pill>
+          </div>
 
           <div className="space-y-3">
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
               Let’s Go Bird
-              <span className="block text-muted-fg">Birding, but it’s a game — and it powers citizen science.</span>
+              <span className="block text-muted-fg">
+                Birding, but it’s a game — and it powers citizen science.
+              </span>
             </h1>
 
             <p className="text-base text-muted-fg">
@@ -25,9 +27,15 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <ButtonLink href="/beta" variant="primary">Join the Beta</ButtonLink>
-            <ButtonLink href="/survey" variant="secondary">Take the Survey</ButtonLink>
-            <ButtonLink href="#palette" variant="ghost">Palette</ButtonLink>
+            <ButtonLink href="/beta" variant="primary">
+              Join the Beta
+            </ButtonLink>
+            <ButtonLink href="/survey" variant="secondary">
+              Take the Survey
+            </ButtonLink>
+            <ButtonLink href="#palette" variant="ghost">
+              Palette
+            </ButtonLink>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-3">
@@ -102,8 +110,12 @@ export default function HomePage() {
             <div className="text-sm text-muted-fg">Join the beta and help shape the roadmap.</div>
           </div>
           <div className="flex gap-3">
-            <ButtonLink href="/beta" variant="primary">Join Beta</ButtonLink>
-            <ButtonLink href="/survey" variant="secondary">Survey</ButtonLink>
+            <ButtonLink href="/beta" variant="primary">
+              Join Beta
+            </ButtonLink>
+            <ButtonLink href="/survey" variant="secondary">
+              Survey
+            </ButtonLink>
           </div>
         </div>
       </div>
@@ -136,7 +148,9 @@ function Swatch({
       <div className={`h-10 w-10 rounded-xl ${className}`} />
       <div className="min-w-0">
         <div className="text-sm font-semibold">{name}</div>
-        <div className="text-xs text-muted-fg">{hex} • {usage}</div>
+        <div className="text-xs text-muted-fg">
+          {hex} • {usage}
+        </div>
       </div>
     </div>
   );
