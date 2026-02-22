@@ -1,0 +1,29 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lgb-web",
+  "main": "worker-entry.mjs",
+  "compatibility_date": "2024-12-30",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "lgb-web"
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "letsgobird.com/*",
+      "zone_name": "letsgobird.com"
+    },
+    {
+      "pattern": "www.letsgobird.com/*",
+      "zone_name": "letsgobird.com"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "birds/grey_headed_kingfisher.jpg": {
+    "title": "Grey-headed Kingfisher at Queen Elizabeth National Park",
+    "creator": "Giles Laurent",
+    "source_name": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:044_Grey-headed_kingfisher_at_Queen_Elizabeth_National_Park_Photo_by_Giles_Laurent.jpg",
+    "license_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Resized for web"
+  },
+  "birds/macgillivrays_warbler.jpg": {
+    "title": "MacGillivray's Warbler",
+    "creator": "Wikimedia Commons contributor (see file page)",
+    "source_name": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:MacGillivray%27s_Warbler_4659m.jpg",
+    "license_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Cropped and resized"
+  },
+  "birds/white_crowned_sparrow.jpg": {
+    "title": "White-crowned Sparrow perched at Llano Seco",
+    "creator": "Frank Schulenburg",
+    "source_name": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:White-crowned_sparrow_perched_at_Llano_Seco.jpg",
+    "license_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Resized for web"
+  },
+  "hero/seagulls_sunrise.jpg": {
+    "title": "Flock of seagulls flying over a calm lake at sunrise",
+    "creator": "Dewang Gupta",
+    "source_name": "Unsplash",
+    "source_url": "https://unsplash.com/photos/flock-of-seagulls-flying-over-a-calm-lake-at-sunrise-N4ZSDFpdW_0",
+    "license_name": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "changes": "Compressed for web"
+  }
+}
