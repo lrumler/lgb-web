@@ -46,7 +46,7 @@ export default function Home() {
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
               <img
-                src="/logo-lockup.png"
+                src="/logo-lockup-v2.png"
                 alt="Let's Go Bird!"
                 className="w-full"
                 draggable="false"
