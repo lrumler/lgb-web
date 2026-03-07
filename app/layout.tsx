@@ -35,6 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F7F9F6] text-[#1F3D2B]`}
       >
         <div className="flex min-h-screen flex-col">
+
           {/* HEADER */}
           <header className="border-b border-[#E5E7EB] bg-white">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -69,10 +70,27 @@ export default function RootLayout({
           <footer className="border-t border-[#E5E7EB] bg-white">
             <div className="mx-auto max-w-6xl px-6 py-8 text-sm text-[#1F3D2B]">
               <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+
                 <div>© {year} Let’s Go Bird</div>
+
+                <div className="flex items-center gap-4">
+                  <a href="/eula" className="hover:opacity-70 transition">
+                    EULA
+                  </a>
+
+                  <a href="/privacy" className="hover:opacity-70 transition">
+                    Privacy
+                  </a>
+
+                  <a href="/terms" className="hover:opacity-70 transition">
+                    Terms
+                  </a>
+                </div>
+
               </div>
             </div>
           </footer>
+
         </div>
       </body>
     </html>
