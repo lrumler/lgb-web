@@ -1,5 +1,5 @@
 const BETA_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSemztUdsdzkZ1wo34RQwbkjPMuGHzDim5gKHGM1jSV7xb7RBQ/viewform";
+  "https://docs.google.com/forms/d/1HMmlVgNwQaXCXv1a4vzKamCsj_Zcd9MP9ZsAMSGzU3U/viewform";
 
 export default function Home() {
   return (

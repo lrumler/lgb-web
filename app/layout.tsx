@@ -56,7 +56,7 @@ export default function RootLayout({
                   Home
                 </a>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSemztUdsdzkZ1wo34RQwbkjPMuGHzDim5gKHGM1jSV7xb7RBQ/viewform"
+                  href="https://docs.google.com/forms/d/1HMmlVgNwQaXCXv1a4vzKamCsj_Zcd9MP9ZsAMSGzU3U/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-2xl bg-[#1F3D2B] px-5 py-2.5 font-medium text-white hover:opacity-90 transition"
