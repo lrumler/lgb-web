@@ -13,13 +13,13 @@ export default function Home() {
             </div>
 
             <h1 className="mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
-              Capture. Identify.
-              <br className="hidden sm:block" /> Level up your birding.
+              Choose your own
+              <br className="hidden sm:block" /> birding adventure.
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-[#1F3D2B]/80 sm:text-lg">
-              Photo, video, and audio ID in one session. Spot the same bird
-              twice — by sight and sound — and earn 2× XP.
+              Hunt for birds with your camera. Or pocket your phone and let us
+              listen. Either way, every bird earns XP.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -75,78 +75,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURES */}
+      {/* CAPTURE / POCKET FEATURE CARDS */}
       <section className="pb-16">
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
             <div className="mb-4 inline-flex items-center justify-center rounded-xl bg-[#E7F3EB] px-3 py-2 text-sm font-bold text-[#1F3D2B]">
-              FS
+              Capture mode
             </div>
             <h3 className="text-lg font-semibold tracking-tight">
-              Field Session Mode
+              Capture mode
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-[#1F3D2B]/75">
-              Hit record, pocket your phone. A gentle haptic buzz tells you when
-              a bird is identified. Review your full session summary after your walk.
+              Phone out, eyes up. Camera and audio running together. Spot the
+              same bird by sight AND sound for 2× XP.
             </p>
           </div>
 
           <div className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
             <div className="mb-4 inline-flex items-center justify-center rounded-xl bg-[#E7F3EB] px-3 py-2 text-sm font-bold text-[#1F3D2B]">
-              XP
+              Pocket mode
             </div>
             <h3 className="text-lg font-semibold tracking-tight">
-              Earn as You Explore
+              Pocket mode
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-[#1F3D2B]/75">
-              XP, streaks, badges, and tier progression from Egg to Soaring.
-              Rare birds score bigger. Identify the same bird by sound AND sight
-              for a 2× bonus.
+              Phone away, just living your life. A gentle buzz tells you when a
+              bird is found. Review your session after your walk.
             </p>
-          </div>
-
-          <div className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
-            <div className="mb-4 inline-flex items-center justify-center rounded-xl bg-[#E7F3EB] px-3 py-2 text-sm font-bold text-[#1F3D2B]">
-              84%
-            </div>
-            <h3 className="text-lg font-semibold tracking-tight">
-              84% Audio Accuracy
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#1F3D2B]/75">
-              Our custom-trained model covers 846 North American species. Built
-              from scratch — no licensed weights, no third-party APIs. Yours
-              alone in the field.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* POCKET YOUR PHONE — dedicated feature moment */}
-      <section className="pb-16">
-        <div className="rounded-3xl border border-[#1F3D2B]/10 bg-gradient-to-br from-[#E7F3EB] to-white p-10 shadow-sm sm:p-14">
-          <div className="mx-auto max-w-2xl text-center">
-            <div className="mb-4 inline-flex items-center rounded-full border border-[#1F3D2B]/10 bg-white px-4 py-2 text-sm font-semibold text-[#1F3D2B]">
-              Field session mode
-            </div>
-            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Pocket your phone.
-              <br className="hidden sm:block" /> We&apos;ll find the birds.
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-[#1F3D2B]/75 sm:text-lg">
-              LetsGoBird listens while you walk — identifying species, building
-              your life list, rewarding every sighting. No screen required. Just
-              a gentle buzz when something flies by.
-            </p>
-            <div className="mt-8">
-              <a
-                href={BETA_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-2xl bg-[#1F3D2B] px-6 py-3 text-sm font-medium text-white hover:opacity-90 transition"
-              >
-                Try It in the Beta
-              </a>
-            </div>
           </div>
         </div>
       </section>
