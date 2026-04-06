@@ -56,10 +56,12 @@ export default function RootLayout({
                   Home
                 </a>
                 <a
-                  href="/survey"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSemztUdsdzkZ1wo34RQwbkjPMuGHzDim5gKHGM1jSV7xb7RBQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-2xl bg-[#1F3D2B] px-5 py-2.5 font-medium text-white hover:opacity-90 transition"
                 >
-                  Join the Waitlist
+                  Join the Beta
                 </a>
               </nav>
             </div>
