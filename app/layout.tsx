@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Let's Go Bird!",
+  title: "Let's Go Bird! | Real-time bird ID from audio and video",
   description:
-    "A gamified citizen-science app turning everyday bird sightings into real conservation impact.",
+    "LetsGoBird listens while you walk — identifying species, building your life list, rewarding every sighting. 846 species, 84% audio accuracy.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -51,9 +51,15 @@ export default function RootLayout({
                 </span>
               </a>
 
-              <nav className="flex items-center gap-6 text-sm">
+              <nav className="flex items-center gap-4 text-sm">
                 <a href="/" className="hover:opacity-70 transition">
                   Home
+                </a>
+                <a
+                  href="/survey"
+                  className="rounded-2xl bg-[#1F3D2B] px-5 py-2.5 font-medium text-white hover:opacity-90 transition"
+                >
+                  Join the Waitlist
                 </a>
               </nav>
             </div>
@@ -74,6 +80,10 @@ export default function RootLayout({
                 <div>© {year} Let’s Go Bird</div>
 
                 <div className="flex items-center gap-4">
+                  <a href="/survey" className="hover:opacity-70 transition">
+                    Survey
+                  </a>
+
                   <a href="/eula" className="hover:opacity-70 transition">
                     EULA
                   </a>

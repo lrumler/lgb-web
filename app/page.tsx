@@ -6,40 +6,27 @@ export default function Home() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <div className="inline-flex items-center rounded-full border border-[#E5E7EB] bg-white px-4 py-2 text-sm">
-              Citizen science • Gamified learning • Conservation impact
+              Real-time bird ID · Audio &amp; video · 846 species
             </div>
 
             <h1 className="mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
-              Rediscover nature,
-              <br className="hidden sm:block" /> one bird at a time.
+              Pocket your phone.
+              <br className="hidden sm:block" /> We&apos;ll find the birds.
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-[#1F3D2B]/80 sm:text-lg">
-              Let’s Go Bird turns everyday sightings into streaks, badges, and
-              real-world conservation impact—built for birders, families, and
-              curious beginners.
+              LetsGoBird listens while you walk — identifying species, building
+              your life list, rewarding every sighting.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
-                href="/beta"
+                href="/survey"
                 className="inline-flex items-center justify-center rounded-2xl bg-[#1F3D2B] px-6 py-3 text-sm font-medium text-white hover:opacity-90 transition"
               >
-                Join the Beta
-              </a>
-
-              <a
-                href="/survey"
-                className="inline-flex items-center justify-center rounded-2xl border border-[#1F3D2B]/20 bg-white px-6 py-3 text-sm font-medium hover:bg-[#1F3D2B]/5 transition"
-              >
-                Take the Birder Survey
+                Join the Waitlist
               </a>
             </div>
-
-            <p className="mt-4 text-sm text-[#1F3D2B]/60">
-              Early access is limited. We’re prioritizing active birders and
-              families who want to learn together.
-            </p>
           </div>
 
           {/* LOGO / VISUAL */}
@@ -53,16 +40,16 @@ export default function Home() {
               />
               <div className="mt-6 space-y-3 text-sm text-[#1F3D2B]/75">
                 <div className="flex gap-3">
-                  <span className="font-medium text-[#1F3D2B]">Streaks</span>
-                  <span>Build a daily nature habit that sticks.</span>
+                  <span className="font-medium text-[#1F3D2B]">Hands-free ID</span>
+                  <span>Audio and photo recognition — no screen time required.</span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="font-medium text-[#1F3D2B]">Badges</span>
-                  <span>Earn progress, unlock perks, refer friends.</span>
+                  <span className="font-medium text-[#1F3D2B]">Earn as you go</span>
+                  <span>XP, streaks, badges, and tier progression.</span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="font-medium text-[#1F3D2B]">Impact</span>
-                  <span>Turn sightings into conservation momentum.</span>
+                  <span className="font-medium text-[#1F3D2B]">Built for everyone</span>
+                  <span>Birders, families, and curious beginners.</span>
                 </div>
               </div>
             </div>
@@ -70,36 +57,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* STATS BAR */}
+      <section className="pb-10">
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 rounded-full border border-[#E5E7EB] bg-white px-6 py-4 text-sm font-semibold text-[#1F3D2B] shadow-sm">
+          <span>846 species</span>
+          <span className="text-[#1F3D2B]/30">·</span>
+          <span>84% audio accuracy</span>
+          <span className="text-[#1F3D2B]/30">·</span>
+          <span>87% photo accuracy</span>
+          <span className="text-[#1F3D2B]/30">·</span>
+          <span>beta launching April 2026</span>
+        </div>
+      </section>
+
       {/* FEATURES */}
       <section className="pb-20">
         <div className="grid gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
+            <div className="mb-4 inline-flex items-center justify-center rounded-xl bg-[#E7F3EB] px-3 py-2 text-sm font-bold text-[#1F3D2B]">
+              FS
+            </div>
             <h3 className="text-lg font-semibold tracking-tight">
-              Identify & Learn
+              Field Session Mode
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-[#1F3D2B]/75">
-              Log sightings, learn species, and build confidence over time with
-              simple, friendly feedback.
+              Hit record, pocket your phone. A gentle haptic buzz tells you when
+              a bird is identified. Review your full session summary after your walk.
             </p>
           </div>
 
           <div className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
+            <div className="mb-4 inline-flex items-center justify-center rounded-xl bg-[#E7F3EB] px-3 py-2 text-sm font-bold text-[#1F3D2B]">
+              XP
+            </div>
             <h3 className="text-lg font-semibold tracking-tight">
-              Gamified Progress
+              Earn as You Explore
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-[#1F3D2B]/75">
-              Streaks, badges, and small perks keep the experience fun—without
-              turning nature into noise.
+              XP, streaks, badges, and tier progression from Egg to Soaring.
+              Rare birds score bigger. Identify the same bird by sound AND sight
+              for a 2× bonus.
             </p>
           </div>
 
           <div className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
+            <div className="mb-4 inline-flex items-center justify-center rounded-xl bg-[#E7F3EB] px-3 py-2 text-sm font-bold text-[#1F3D2B]">
+              84%
+            </div>
             <h3 className="text-lg font-semibold tracking-tight">
-              Real Conservation
+              84% Audio Accuracy
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-[#1F3D2B]/75">
-              We’re building toward privacy-safe data sharing and community
-              initiatives that support habitat and education.
+              Our custom-trained model covers 846 North American species. Built
+              from scratch — no licensed weights, no third-party APIs. Yours
+              alone in the field.
             </p>
           </div>
         </div>
@@ -112,15 +123,15 @@ export default function Home() {
                 Help shape the beta.
               </h2>
               <p className="mt-2 text-sm text-[#1F3D2B]/75">
-                Tell us what matters most—ID accuracy, streaks, badges,
-                community, or conservation impact.
+                Early access is limited. We&apos;re prioritizing active birders
+                and anyone who wants to make this the birding app they always wanted.
               </p>
             </div>
             <a
               href="/survey"
-              className="inline-flex items-center justify-center rounded-2xl bg-[#1F3D2B] px-6 py-3 text-sm font-medium text-white hover:opacity-90 transition"
+              className="inline-flex shrink-0 items-center justify-center rounded-2xl bg-[#1F3D2B] px-6 py-3 text-sm font-medium text-white hover:opacity-90 transition"
             >
-              Take the Survey
+              Join the Waitlist
             </a>
           </div>
         </div>
