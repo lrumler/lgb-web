@@ -35,31 +35,60 @@ export default function Home() {
           </div>
 
           {/* BIRD CARD GRID */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex flex-col items-center gap-3 lg:items-end">
             <div className="grid w-full max-w-md grid-cols-2 gap-4">
               {[
-                { name: "American Robin", color: "#c2522a", rotate: "-rotate-1" },
-                { name: "Bald Eagle", color: "#3b2a1a", rotate: "rotate-1" },
-                { name: "Barred Owl", color: "#6b5b4f", rotate: "rotate-1" },
-                { name: "Black-capped Chickadee", color: "#4a5e3a", rotate: "-rotate-1" },
+                {
+                  name: "American Robin",
+                  photo: "https://inaturalist-open-data.s3.amazonaws.com/photos/113648392/large.jpeg",
+                  credit: "Sam Kieschnick",
+                },
+                {
+                  name: "Bald Eagle",
+                  photo: "https://inaturalist-open-data.s3.amazonaws.com/photos/339495369/large.jpg",
+                  credit: "Matt Felperin",
+                },
+                {
+                  name: "Barred Owl",
+                  photo: "https://inaturalist-open-data.s3.amazonaws.com/photos/29178693/large.jpg",
+                  credit: "Owen Strickland",
+                },
+                {
+                  name: "Black-capped Chickadee",
+                  photo: "https://inaturalist-open-data.s3.amazonaws.com/photos/155785827/large.jpg",
+                  credit: "Blake Ross",
+                },
               ].map((bird) => (
                 <div
                   key={bird.name}
-                  className={`${bird.rotate} rounded-2xl border border-[#d6cfc3] bg-[#f5f0e8] p-4 shadow-sm transition hover:scale-105`}
+                  className="overflow-hidden rounded-2xl border border-[#d6cfc3] bg-[#f5f0e8] shadow-sm transition hover:scale-105"
                 >
-                  <p className="mb-2 text-center text-[9px] font-semibold uppercase tracking-[0.15em] text-[#1F3D2B]/60">
-                    Have you seen this bird?
-                  </p>
-                  <div
-                    className="aspect-square w-full rounded-lg"
-                    style={{ backgroundColor: bird.color }}
-                  />
-                  <p className="mt-3 text-center text-xs font-semibold text-[#1F3D2B]">
-                    {bird.name}
-                  </p>
+                  <div className="px-4 pt-3 pb-2">
+                    <p className="text-center text-[9px] font-semibold uppercase tracking-[0.15em] text-[#1F3D2B]/60">
+                      Have you seen this bird?
+                    </p>
+                  </div>
+                  <div className="px-3">
+                    <img
+                      src={bird.photo}
+                      alt={bird.name}
+                      className="aspect-square w-full rounded-lg object-cover"
+                    />
+                  </div>
+                  <div className="px-4 pt-2.5 pb-3">
+                    <p className="text-center text-xs font-semibold text-[#1F3D2B]">
+                      {bird.name}
+                    </p>
+                    <p className="mt-1 text-center text-[8px] text-[#1F3D2B]/40">
+                      © {bird.credit} · CC BY
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
+            <p className="max-w-md text-center text-[10px] leading-relaxed text-[#1F3D2B]/40">
+              Species photos © their respective photographers via iNaturalist · CC BY. Used with attribution.
+            </p>
           </div>
         </div>
       </section>
