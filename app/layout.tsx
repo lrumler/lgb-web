@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Let's Go Bird! | Real-time bird ID from audio and video",
   description:
-    "LetsGoBird listens while you walk — identifying species, building your life list, rewarding every sighting. 846 species, 84% audio accuracy.",
+    "LetsGoBird listens while you walk — identifying species, building your life list, rewarding every sighting. 600+ birds identified, 84% audio accuracy.",
   icons: {
     icon: "/favicon.ico",
   },

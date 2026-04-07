@@ -34,29 +34,31 @@ export default function Home() {
             </div>
           </div>
 
-          {/* LOGO / VISUAL */}
+          {/* BIRD CARD GRID */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
-              <img
-                src="/logo-lockup-v2.png"
-                alt="Let's Go Bird!"
-                className="w-full"
-                draggable="false"
-              />
-              <div className="mt-6 space-y-3 text-sm text-[#1F3D2B]/75">
-                <div className="flex gap-3">
-                  <span className="font-medium text-[#1F3D2B]">Multimodal ID</span>
-                  <span>Photo, video, and audio recognition in one session.</span>
+            <div className="grid w-full max-w-md grid-cols-2 gap-4">
+              {[
+                { name: "American Robin", color: "#c2522a", rotate: "-rotate-1" },
+                { name: "Bald Eagle", color: "#3b2a1a", rotate: "rotate-1" },
+                { name: "Barred Owl", color: "#6b5b4f", rotate: "rotate-1" },
+                { name: "Black-capped Chickadee", color: "#4a5e3a", rotate: "-rotate-1" },
+              ].map((bird) => (
+                <div
+                  key={bird.name}
+                  className={`${bird.rotate} rounded-2xl border border-[#d6cfc3] bg-[#f5f0e8] p-4 shadow-sm transition hover:scale-105`}
+                >
+                  <p className="mb-2 text-center text-[9px] font-semibold uppercase tracking-[0.15em] text-[#1F3D2B]/60">
+                    Have you seen this bird?
+                  </p>
+                  <div
+                    className="aspect-square w-full rounded-lg"
+                    style={{ backgroundColor: bird.color }}
+                  />
+                  <p className="mt-3 text-center text-xs font-semibold text-[#1F3D2B]">
+                    {bird.name}
+                  </p>
                 </div>
-                <div className="flex gap-3">
-                  <span className="font-medium text-[#1F3D2B]">Earn as you go</span>
-                  <span>XP, streaks, badges, and tier progression.</span>
-                </div>
-                <div className="flex gap-3">
-                  <span className="font-medium text-[#1F3D2B]">Built for everyone</span>
-                  <span>Birders, families, and curious beginners.</span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -65,7 +67,7 @@ export default function Home() {
       {/* STATS BAR */}
       <section className="pb-10">
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 rounded-full border border-[#E5E7EB] bg-white px-6 py-4 text-sm font-semibold text-[#1F3D2B] shadow-sm">
-          <span>846 species</span>
+          <span>600+ birds identified</span>
           <span className="text-[#1F3D2B]/30">·</span>
           <span>84% audio accuracy</span>
           <span className="text-[#1F3D2B]/30">·</span>
