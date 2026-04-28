@@ -1,16 +1,39 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Unbounded, JetBrains_Mono } from "next/font/google";
+import { BrandWordmark } from "@/components/BrandWordmark";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+/*
+ * Font loading mirrors the mobile design system:
+ *   - Unbounded: display headings, BrandWordmark
+ *   - Inter:     body, UI text
+ *   - JetBrains Mono: stats, codes, labels
+ *
+ * next/font injects each as a CSS variable on <body>; globals.css picks
+ * them up via @theme inline { --font-display: var(--font-unbounded) ... }
+ */
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
   subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+  display: "swap",
 });
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const BETA_FORM_URL =
+  "https://docs.google.com/forms/d/1HMmlVgNwQaXCXv1a4vzKamCsj_Zcd9MP9ZsAMSGzU3U/viewform";
 
 export const metadata: Metadata = {
   title: "Let's Go Bird! | Real-time bird ID from audio and video",
@@ -32,34 +55,29 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F7F9F6] text-[#1F3D2B]`}
+        className={`${inter.variable} ${unbounded.variable} ${jetbrainsMono.variable} antialiased bg-bg text-fg`}
       >
         <div className="flex min-h-screen flex-col">
 
           {/* HEADER */}
-          <header className="border-b border-[#E5E7EB] bg-white">
+          <header className="border-b border-border bg-card">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-              <a href="/" className="flex items-center gap-3">
-                <img
-                  src="/logo-mark-v2.png"
-                  alt="Let's Go Bird logo"
-                  className="h-10 w-10"
-                  draggable="false"
-                />
-                <span className="text-lg font-semibold tracking-wide">
-                  LET&apos;S GO BIRD!
-                </span>
+              <a href="/" aria-label="Let's Go Bird home">
+                <BrandWordmark size="md" />
               </a>
 
-              <nav className="flex items-center gap-4 text-sm">
-                <a href="/" className="hover:opacity-70 transition">
+              <nav className="flex items-center gap-5 text-sm">
+                <a
+                  href="/"
+                  className="font-medium text-fg/80 transition hover:text-fg"
+                >
                   Home
                 </a>
                 <a
-                  href="https://docs.google.com/forms/d/1HMmlVgNwQaXCXv1a4vzKamCsj_Zcd9MP9ZsAMSGzU3U/viewform"
+                  href={BETA_FORM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-2xl bg-[#1F3D2B] px-5 py-2.5 font-medium text-white hover:opacity-90 transition"
+                  className="rounded-2xl bg-primary px-5 py-2.5 font-semibold text-primary-fg shadow-soft transition hover:opacity-90"
                 >
                   Join the Beta
                 </a>
@@ -75,30 +93,28 @@ export default function RootLayout({
           </main>
 
           {/* FOOTER */}
-          <footer className="border-t border-[#E5E7EB] bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-8 text-sm text-[#1F3D2B]">
+          <footer className="border-t border-border bg-card">
+            <div className="mx-auto max-w-6xl px-6 py-8 text-sm text-muted-fg">
               <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+                <div className="flex items-center gap-3">
+                  <BrandWordmark size="sm" />
+                  <span className="text-muted-fg">© {year}</span>
+                </div>
 
-                <div>© {year} Let’s Go Bird</div>
-
-                <div className="flex items-center gap-4">
-                  <a href="/survey" className="hover:opacity-70 transition">
+                <div className="flex items-center gap-5">
+                  <a href="/survey" className="transition hover:text-fg">
                     Survey
                   </a>
-
-                  <a href="/eula" className="hover:opacity-70 transition">
+                  <a href="/eula" className="transition hover:text-fg">
                     EULA
                   </a>
-
-                  <a href="/privacy" className="hover:opacity-70 transition">
+                  <a href="/privacy" className="transition hover:text-fg">
                     Privacy
                   </a>
-
-                  <a href="/terms" className="hover:opacity-70 transition">
+                  <a href="/terms" className="transition hover:text-fg">
                     Terms
                   </a>
                 </div>
-
               </div>
             </div>
           </footer>
