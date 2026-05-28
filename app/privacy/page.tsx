@@ -5,7 +5,7 @@ export default function PrivacyPage() {
         Let's Go Bird Privacy Policy
       </h1>
       <p style={{ color: "#555", marginBottom: "2rem" }}>
-        Effective Date: April 26, 2026
+        Effective Date: May 28, 2026
       </p>
       <div
         style={{
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
       >
 {`Let's Go Bird Privacy Policy
 
-This Privacy Policy describes how Let's Go Bird LLC ("Let's Go Bird," "we," "our," or "us") collects, uses, and protects information when you use the Let's Go Bird mobile application and the letsgobird.com website (together, the "Services").
+This Privacy Policy describes how Let's Go Bird, LLC, a Maine limited liability company (Charter Number 202611537DC) ("Let's Go Bird," "we," "our," or "us"), collects, uses, and protects information when you use the Let's Go Bird mobile application and the letsgobird.com website (together, the "Services").
 
 By using the Services, you agree to the practices described in this policy. If you do not agree, please do not use the Services.
 
@@ -146,8 +146,10 @@ We may update this Privacy Policy periodically. When we make material changes, w
 
 If you have questions about this Privacy Policy or wish to exercise any of your rights, please contact us:
 
-Let's Go Bird LLC
-Mount Vernon, Maine, USA
+Let's Go Bird, LLC
+A Maine Limited Liability Company · Charter Number 202611537DC
+Registered Agent: Lucas Rumler
+46 Weston Rd, Mount Vernon, ME 04352, USA
 admin@letsgobird.com
 `}
       </div>

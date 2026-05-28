@@ -5,7 +5,7 @@ export default function EulaPage() {
         Let's Go Bird End User License Agreement
       </h1>
       <p style={{ color: "#555", marginBottom: "2rem" }}>
-        Effective Date: April 26, 2026 · Version 1.1
+        Effective Date: May 28, 2026 · Version 1.2
       </p>
       <div
         style={{
@@ -19,10 +19,10 @@ export default function EulaPage() {
       >
         {`LET'S GO BIRD
 End User License Agreement
-Effective Date: April 26, 2026
-Version 1.1
+Effective Date: May 28, 2026
+Version 1.2
 
-This End User License Agreement ("Agreement") is a binding contract between you ("you" or "your") and Let's Go Bird LLC, a Maine limited liability company (formation pending) ("Let's Go Bird," "we," "our," or "us"), governing your use of the Let's Go Bird mobile application, the letsgobird.com website, and related services (collectively, the "App").
+This End User License Agreement ("Agreement") is a binding contract between you ("you" or "your") and Let's Go Bird, LLC, a Maine limited liability company (Charter Number 202611537DC, formed March 6, 2026) ("Let's Go Bird," "we," "our," or "us"), governing your use of the Let's Go Bird mobile application, the letsgobird.com website, and related services (collectively, the "App").
 
 By downloading, installing, accessing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not use the App.
 
@@ -156,8 +156,10 @@ If any provision of this Agreement is found to be unenforceable, the remaining p
 18. Acceptance
 BY DOWNLOADING, INSTALLING, OR USING THE LET'S GO BIRD APP, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS.
 
-Let's Go Bird LLC
-Mount Vernon, Maine, USA
+Let's Go Bird, LLC
+A Maine Limited Liability Company · Charter Number 202611537DC
+Registered Agent: Lucas Rumler
+46 Weston Rd, Mount Vernon, ME 04352, USA
 admin@letsgobird.com
 www.letsgobird.com`}
       </div>

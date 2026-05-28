@@ -61,8 +61,9 @@ Let’s Go Bird shall not be liable for damages resulting from use of the servic
 We may suspend or terminate access for violations of these terms.
 
 Contact:
-Let’s Go Bird LLC
-Mount Vernon, Maine
+Let’s Go Bird, LLC
+A Maine Limited Liability Company · Charter Number 202611537DC
+46 Weston Rd, Mount Vernon, ME 04352
 admin@letsgobird.com
 `}
       </div>

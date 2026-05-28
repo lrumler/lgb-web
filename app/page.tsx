@@ -138,6 +138,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SCREENSHOTS — see it in action */}
+      <section className="pb-16">
+        <div className="mb-8 text-center">
+          <h2 className="font-display text-2xl font-extrabold tracking-tight text-fg sm:text-3xl">
+            See it in action
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-sm text-fg/75 sm:text-base">
+            Catch &rsquo;em all. Every confirmed bird unlocks a card in your
+            Birdex and a page in your own field guide.
+          </p>
+        </div>
+
+        <div className="mx-auto grid max-w-2xl gap-8 sm:grid-cols-2">
+          {[
+            {
+              src: "/screenshots/birdex-grid.png",
+              alt: "The Let's Go Bird Birdex collection grid, showing locked species and the Bird of the Day.",
+              caption: "Your Birdex — 1,122 species to unlock",
+            },
+            {
+              src: "/screenshots/woodcock.png",
+              alt: "The American Woodcock species page in Let's Go Bird, showing the bird photo and your sightings.",
+              caption: "A field guide page for every species",
+            },
+          ].map((shot) => (
+            <figure key={shot.src} className="flex flex-col items-center">
+              <div className="overflow-hidden rounded-[2.25rem] border-[6px] border-fg/90 bg-fg/90 shadow-soft">
+                <img
+                  src={shot.src}
+                  alt={shot.alt}
+                  className="block w-full max-w-[260px] object-cover"
+                />
+              </div>
+              <figcaption className="mt-4 text-center text-sm font-medium text-fg/75">
+                {shot.caption}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
       {/* BOTTOM CTA */}
       <section className="pb-20">
         <div className="rounded-3xl border border-border bg-card p-8 shadow-soft">
