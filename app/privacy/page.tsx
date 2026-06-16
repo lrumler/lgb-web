@@ -5,7 +5,7 @@ export default function PrivacyPage() {
         Let's Go Bird Privacy Policy
       </h1>
       <p style={{ color: "#555", marginBottom: "2rem" }}>
-        Effective Date: April 26, 2026
+        Effective Date: June 15, 2026 · Version 2.0
       </p>
       <div
         style={{
@@ -101,12 +101,14 @@ Access
 You may request a copy of the personal information we hold about you by emailing admin@letsgobird.com.
 
 Deletion
-You may request deletion of your account and associated personal data at any time. Once we have built in-app account deletion, you will be able to do this directly in the app. Until then, you may request deletion by emailing admin@letsgobird.com. We will delete your personal data within 90 days of confirmed request.
+You may request deletion of your account and associated personal data at any time. Once we have built in-app account deletion, you will be able to do this directly in the app. Until then, you may request deletion by emailing admin@letsgobird.com. Within 90 days of a confirmed request, we will delete your account, remove the personal identifiers we hold about you (such as username and email), and sever the link between you and the content you submitted, so that your past submissions can no longer be associated with you.
 
-Exclusion from Training Data
-If you do not want your audio recordings or photographs used for model training, you may:
-• Delete your account, which removes your contributions from active datasets within 90 days
-• Contact us at admin@letsgobird.com to request exclusion without account deletion
+Audio recordings and photographs that have already been de-identified and incorporated into a training dataset or a trained model cannot be individually retrieved or removed and will persist in de-identified form, where they are no longer linked to your identity. See "Controlling Use of Your Content for Training" below and Section 9.
+
+Controlling Use of Your Content for Training
+You can limit how your content is used to train our models:
+• You may ask us to stop using your submissions for future model training at any time — by emailing admin@letsgobird.com, or by deleting your account. This prevents your content from being added to training datasets going forward.
+• We cannot remove content that has already been de-identified and incorporated into a training dataset or trained model. The license you grant in the EULA is irrevocable as to content already used, and trained models and de-identified datasets cannot be reverse-engineered to extract or delete one person's contribution. Stopping future use does not un-train existing models.
 
 Correction
 You may request correction of inaccurate personal data by emailing admin@letsgobird.com.
@@ -129,7 +131,7 @@ The Let's Go Bird Services are not directed to children under the age of 13. We 
 
 9. Data Retention
 
-• Audio recordings and photographs are retained indefinitely for model training and quality improvement, unless you request deletion or delete your account.
+• Audio recordings and photographs are retained for model training and quality improvement. When you delete your account or request deletion, we remove the personal identifiers linking these recordings to you; the de-identified recordings and images themselves may be retained indefinitely, including within training datasets and trained models, where they can no longer be associated with your identity.
 • Location data associated with sightings is retained alongside the sighting record, indefinitely or until account deletion.
 • Account information is retained while your account is active, and deleted within 90 days of account deletion or upon your request.
 • Crash reports and analytics are retained per the policies of our service providers (typically 30-90 days).
@@ -140,7 +142,7 @@ Let's Go Bird is operated from the United States. If you access the Services fro
 
 11. Changes to This Policy
 
-We may update this Privacy Policy periodically. When we make material changes, we will update the Effective Date at the top of this document and, where appropriate, provide notice through the app or website. Continued use of the Services after the Effective Date constitutes acceptance of the updated policy.
+We may update this Privacy Policy periodically. When we make material changes, we will update the Effective Date and Version at the top of this document and, where appropriate, provide notice through the app or website. Continued use of the Services after the Effective Date constitutes acceptance of the updated policy.
 
 12. Contact Us
 

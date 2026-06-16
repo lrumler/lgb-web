@@ -5,7 +5,7 @@ export default function EulaPage() {
         Let's Go Bird End User License Agreement
       </h1>
       <p style={{ color: "#555", marginBottom: "2rem" }}>
-        Effective Date: April 26, 2026 · Version 1.1
+        Effective Date: June 15, 2026 · Version 2.0
       </p>
       <div
         style={{
@@ -19,10 +19,10 @@ export default function EulaPage() {
       >
         {`LET'S GO BIRD
 End User License Agreement
-Effective Date: April 26, 2026
-Version 1.1
+Effective Date: June 15, 2026
+Version 2.0
 
-This End User License Agreement ("Agreement") is a binding contract between you ("you" or "your") and Let's Go Bird LLC, a Maine limited liability company (formation pending) ("Let's Go Bird," "we," "our," or "us"), governing your use of the Let's Go Bird mobile application, the letsgobird.com website, and related services (collectively, the "App").
+This End User License Agreement ("Agreement") is a binding contract between you ("you" or "your") and Let's Go Bird LLC, a Maine limited liability company ("Let's Go Bird," "we," "our," or "us"), governing your use of the Let's Go Bird mobile application, the letsgobird.com website, and related services (collectively, the "App").
 
 By downloading, installing, accessing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not use the App.
 

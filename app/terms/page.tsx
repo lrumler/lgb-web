@@ -6,7 +6,7 @@ export default function TermsPage() {
       </h1>
 
       <p style={{ color: "#555", marginBottom: "2rem" }}>
-        Effective Date: March 5, 2026
+        Effective Date: June 15, 2026 · Version 2.0
       </p>
 
       <div
